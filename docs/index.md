@@ -1,12 +1,3 @@
-Here is the complete, updated index.md.
-
-I have updated the plagueng section to explicitly state it was Contract Work, and I have ensured the Healthcare Experience and Vulkan sections are fully included.
-
-code
-Markdown
-download
-content_copy
-expand_less
 ---
 layout: default
 title: JoseJL
