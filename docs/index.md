@@ -199,7 +199,7 @@ title: JoseJL
       <ul class="bullets">
         <li><b>Rendering:</b> Vulkan, bgfx, D3D9/11, PBR, GPU-driven pipelines.</li>
         <li><b>Systems:</b> Frame pacing, Input abstraction, Memory management, Resource lifetime.</li>
-        <li><b>Reverse Engineering:</b> Working without source, binary patching, x86 segmentation/legacy constraints.</li>
+        <li><b>Reverse Engineering:</b> Working without source, Ghidra and IDA analysis, binary patching, x86 segmentation/legacy constraints.</li>
         <li><b>Tooling:</b> Automation for content-heavy projects, asset extraction/insertion pipelines.</li>
       </ul>
     </div>
