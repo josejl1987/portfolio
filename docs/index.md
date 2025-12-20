@@ -46,6 +46,19 @@ title: JoseJL
         <img src="assets/geofront_dialogue.png" alt="Dialogue presentation" loading="lazy">
         <figcaption>Dialogue presentation sample under the patched build.</figcaption>
       </figure>
+
+      <div class="callout" id="media">
+        <div class="callout__title">Framebuffer blending optimization </div>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/zULIUYoSZRU"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      
     </div>
   </div>
 </section>
@@ -97,7 +110,7 @@ title: JoseJL
     <div class="media">
       <figure>
         <img src="assets/brandish2_pc98.png" alt="Brandish 2 on PC-98 CRT" loading="lazy">
-        <figcaption>In-game English text on original-style output (CRT capture).</figcaption>
+        <figcaption>In-game English text working on real hardware (CRT capture).</figcaption>
       </figure>
     </div>
   </div>
@@ -122,17 +135,7 @@ title: JoseJL
         <li><b>GPU-driven terrain tooling:</b> interactive authoring/painting workflows and GPU-side data flow.</li>
       </ul>
 
-      <div class="callout" id="media">
-        <div class="callout__title">Latest video (uses plagueng rendering)</div>
-        <div class="video">
-          <iframe
-            src="https://www.youtube.com/embed/zULIUYoSZRU"
-            title="plagueng rendering demo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-      </div>
+
     </div>
 
     <div class="media">
