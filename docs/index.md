@@ -7,8 +7,6 @@ title: JoseJL
   <div class="hero__subtitle">Game development engineering: rendering, systems programming, reverse engineering, and tooling.</div>
   <div class="hero__links">
     <a class="pill" href="https://github.com/josejl1987">GitHub</a>
-    <a class="pill" href="https://github.com/josejl1987/plagueng">plagueng</a>
-    <a class="pill" href="#media">Media</a>
   </div>
 </div>
 
