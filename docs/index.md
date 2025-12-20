@@ -28,11 +28,20 @@ Work delivered (representative):
 ![Dialogue presentation](assets/geofront_dialogue.png)  
 *Dialogue UI sample (layout and text flow under the patched build).*
 
-![Dialogue presentation](assets/geofront_dialogue.png)  
-*Dialogue UI sample (layout and text flow under the patched build).*
 
-![Performance optimizations]
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zULIUYoSZRU?si=ZqSUO5l6IWh3r6ha" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<div style="max-width: 900px;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe
+      src="https://www.youtube.com/embed/zULIUYoSZRU"
+      title="Performance optimizations"
+      style="position:absolute; top:0; left:0; width:100%; height:100%;"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
 ---
 
 ## Committee of Zero — Robotics;Notes Elite / Chaos;Head Noah (PC)
@@ -58,7 +67,7 @@ Work delivered (representative):
 
 **Role:** programmer (reverse engineering + translation pipeline support)
 
-Work delivered (representative):
+Work delivered :
 - Handling **format/layout constraints** typical of PC-98-era titles (text boxes, font constraints, pointer safety)
 - Tooling/workflows to **extract/insert/verify** content changes
 - Conservative patching to avoid late-game regressions under tight constraints
@@ -82,8 +91,6 @@ Implemented / explored (high-level):
 - **GPU-driven terrain tooling** (interactive authoring/painting workflows and GPU-side data flow)
 
 
-
-**Rendering screenshot**
 
 <img src="https://docs.khosmium.com/~gitbook/image?url=https%3A%2F%2F4192102853-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FXgWn8Pw4fHYy81wa6DEA%252Fuploads%252FKrbLUNn9r5RZRAM7mzCz%252F4b700c793de829d18064304de4cd491d_original.webp%3Falt%3Dmedia%26token%3Db1391134-b7e9-456b-9584-67cd7a7eb375&width=1200&dpr=1&quality=100&sign=b6cf5187&sv=2" />
 
