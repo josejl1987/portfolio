@@ -1,12 +1,15 @@
----
 title: JoseJL
 ---
 
 <div class="hero">
   <div class="hero__title">JoseJL</div>
-  <div class="hero__subtitle">Game development engineering: rendering, systems programming, reverse engineering, and tooling.</div>
+  <div class="hero__subtitle">
+    Game development engineering: rendering, systems programming, reverse engineering, and tooling.
+  </div>
   <div class="hero__links">
     <a class="pill" href="https://github.com/josejl1987">GitHub</a>
+    <a class="pill" href="https://github.com/josejl1987/plagueng">plagueng</a>
+    <a class="pill" href="#focus">Technical focus</a>
   </div>
 </div>
 
@@ -21,16 +24,23 @@ title: JoseJL
 <section class="project" id="geofront">
   <div class="project__top">
     <h2 class="project__title">Geofront — Trails from Zero / Trails to Azure (PC)</h2>
-    <div class="project__meta">Role: lead programmer (features, fixes, integration)</div>
+    <div class="project__meta">
+      Role: lead programmer (features, fixes, integration) · Graphics API: <b>Direct3D 9</b>
+    </div>
   </div>
 
   <div class="project__grid">
     <div>
+      <p class="muted">
+        Work delivered as a runtime patch under compatibility constraints (no source access).
+        Reverse engineering workflows used <b>IDA</b> and <b>Ghidra</b>, plus runtime inspection/instrumentation for verification and regression control.
+      </p>
+
       <ul class="bullets">
         <li><b>UI / input systems:</b> controller remapping flows; integration of new actions into existing input + UI paths.</li>
         <li><b>Backlog / message log:</b> dialogue history capture and navigation UI integrated with message flow.</li>
         <li><b>Menu and UX work:</b> options/save-related improvements to reduce friction in common workflows.</li>
-        <li><b>Frame pacing / high-FPS work:</b> validating timing-sensitive behavior beyond a 30 FPS baseline.</li>
+        <li><b>Frame pacing / high-FPS work:</b> raised framerate cap and checked timing-sensitive behavior at higher refresh rates.</li>
         <li><b>Stability/performance fixes:</b> targeted fixes where long sessions expose resource lifetime issues.</li>
       </ul>
     </div>
@@ -44,19 +54,6 @@ title: JoseJL
         <img src="assets/geofront_dialogue.png" alt="Dialogue presentation" loading="lazy">
         <figcaption>Dialogue presentation sample under the patched build.</figcaption>
       </figure>
-
-      <div class="callout" id="media">
-        <div class="callout__title">Framebuffer blending optimization </div>
-        <div class="video">
-          <iframe
-            src="https://www.youtube.com/embed/zULIUYoSZRU"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-
-      
     </div>
   </div>
 </section>
@@ -64,13 +61,20 @@ title: JoseJL
 <section class="project" id="coz">
   <div class="project__top">
     <h2 class="project__title">Committee of Zero — Robotics;Notes Elite / Chaos;Head Noah (PC)</h2>
-    <div class="project__meta">Role: programmer / hacker (engine-side patching and supporting tooling)</div>
+    <div class="project__meta">
+      Role: programmer / hacker (engine-side patching + tooling) · Graphics APIs: <b>Direct3D 9</b> / <b>Direct3D 11</b>
+    </div>
   </div>
 
   <div class="project__grid">
     <div>
+      <p class="muted">
+        Runtime patching and tooling support across multiple PC VN engine variants.
+        Reverse engineering workflows used <b>IDA</b> and <b>Ghidra</b>, with changes validated against stability and common regression patterns.
+      </p>
+
       <ul class="bullets">
-        <li><b>Runtime patching:</b> changes delivered without engine source access, with compatibility constraints.</li>
+        <li><b>Runtime patching:</b> changes delivered without engine source access, with packaging and compatibility constraints.</li>
         <li><b>Text/UI behavior fixes:</b> presentation and interaction edge cases; regression handling.</li>
         <li><b>Compatibility:</b> practical fixes across common PC configurations and locales.</li>
         <li><b>Iteration discipline:</b> release workflows built around reproducibility and testing.</li>
@@ -93,22 +97,29 @@ title: JoseJL
 <section class="project" id="brandish2">
   <div class="project__top">
     <h2 class="project__title">Brandish 2 (PC-98) — Fan Translation Engineering</h2>
-    <div class="project__meta">Role: programmer (reverse engineering + translation pipeline support)</div>
+    <div class="project__meta">
+      Role: programmer (reverse engineering + translation pipeline support)
+    </div>
   </div>
 
   <div class="project__grid">
     <div>
+      <p class="muted">
+        PC-98-era constraints: tight layout limits, legacy encodings, and pointer-sensitive text storage.
+        Work emphasized conservative patching and verification after content expansion.
+      </p>
+
       <ul class="bullets">
         <li><b>Format/layout constraints:</b> text boxes, font constraints, pointer safety, and legacy asset behavior.</li>
         <li><b>Tooling:</b> workflows to extract/insert/verify content changes.</li>
-        <li><b>Patch safety:</b> conservative changes to avoid late-game regressions under tight constraints.</li>
+        <li><b>Patch safety:</b> changes designed to avoid late-game regressions under tight constraints.</li>
       </ul>
     </div>
 
     <div class="media">
       <figure>
         <img src="assets/brandish2_pc98.png" alt="Brandish 2 on PC-98 CRT" loading="lazy">
-        <figcaption>In-game English text working on real hardware (CRT capture).</figcaption>
+        <figcaption>In-game English text on original-style output (CRT capture).</figcaption>
       </figure>
     </div>
   </div>
@@ -117,13 +128,16 @@ title: JoseJL
 <section class="project" id="plagueng">
   <div class="project__top">
     <h2 class="project__title">plagueng — Legacy D3D9 Engine Modernization / Rendering R&amp;D (C++)</h2>
-    <div class="project__meta">Repository: <a href="https://github.com/josejl1987/plagueng">github.com/josejl1987/plagueng</a></div>
+    <div class="project__meta">
+      Repository: <a href="https://github.com/josejl1987/plagueng">github.com/josejl1987/plagueng</a> · Rendering layer: <b>bgfx</b>
+    </div>
   </div>
 
   <div class="project__grid">
     <div>
       <p class="muted">
         Modernization work evolving a legacy D3D9-era architecture into a codebase suitable for experimenting with modern rendering and tools.
+        Focus is on rendering architecture, GPU-driven authoring workflows, and performance-minded iteration.
       </p>
 
       <ul class="bullets">
@@ -133,7 +147,17 @@ title: JoseJL
         <li><b>GPU-driven terrain tooling:</b> interactive authoring/painting workflows and GPU-side data flow.</li>
       </ul>
 
-
+      <div class="callout" id="media">
+        <div class="callout__title">Latest video (uses plagueng rendering)</div>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/zULIUYoSZRU"
+            title="plagueng rendering demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
 
     <div class="media">
@@ -154,12 +178,15 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <ul class="bullets">
-        <li><b>Rendering:</b> PBR, forward/deferred variants, clustered lighting, GPU-driven tools.</li>
+        <li><b>Reverse engineering:</b> IDA, Ghidra, runtime inspection; patch safety and regression control.</li>
+        <li><b>Graphics APIs:</b> Direct3D 9 (Geofront), Direct3D 9/11 (Committee of Zero), bgfx (plagueng).</li>
+        <li><b>Rendering:</b> PBR, forward/deferred variants, clustered lighting, GPU-driven authoring tools.</li>
         <li><b>Systems:</b> frame pacing, UI/input integration, stability work, resource lifetime issues.</li>
-        <li><b>Reverse engineering:</b> working without source access, patch safety, regression avoidance.</li>
         <li><b>Tooling:</b> iteration pipelines, validation, automation for content-heavy projects.</li>
+        <li><b>Others:</b> Several years of experience developing enterprise grade cloud based medical imaging visualization in C#</li>
       </ul>
     </div>
+
     <div class="media">
       <div class="note">
         <b>Note.</b> This page avoids distributing copyrighted game data. Screenshots and clips are shown for demonstration.
