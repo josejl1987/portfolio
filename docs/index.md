@@ -5,6 +5,9 @@ title: JoseJL
 
 <div class="hero">
   <div class="hero__title">JoseJL</div>
+  <div class="hero__contact">
+    <a href="mailto:josejl1987@gmail.com">josejl1987@gmail.com</a>
+  </div>
   <div class="hero__subtitle">
     Game Engineering &amp; Systems Architect.<br>
     8+ years professional experience (Healthcare/Cloud) specializing in Rendering, Reverse Engineering, and Tooling.
