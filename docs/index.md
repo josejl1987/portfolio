@@ -213,3 +213,6 @@ title: JoseJL
     </div>
   </div>
 </section>
+<footer class="site-footer">
+  <span>Contact: <a href="mailto:josejl1987@gmail.com">josejl1987@gmail.com</a></span>
+</footer>
