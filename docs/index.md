@@ -1,16 +1,12 @@
----
-layout: default
-title: JoseJL — Portfolio
----
 
 # JoseJL — Game Development Engineering Portfolio
 
 Work includes **rendering**, **systems programming**, **reverse engineering**, and **tooling**.  
-A large portion of shipped output has been in projects where changes must be delivered as **runtime patches** (no source access, strict compatibility requirements) and validated against long play sessions.
+A large portion of shipped output has been in projects where changes must be delivered as **runtime patches** (no source code access, strict compatibility requirements) and validated against long play sessions.
 
 Links:
 - GitHub: https://github.com/josejl1987
-- plagueng: https://github.com/josejl1987/plagueng
+
 
 ---
 
@@ -32,6 +28,11 @@ Work delivered (representative):
 ![Dialogue presentation](assets/geofront_dialogue.png)  
 *Dialogue UI sample (layout and text flow under the patched build).*
 
+![Dialogue presentation](assets/geofront_dialogue.png)  
+*Dialogue UI sample (layout and text flow under the patched build).*
+
+![Performance optimizations]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zULIUYoSZRU?si=ZqSUO5l6IWh3r6ha" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ---
 
 ## Committee of Zero — Robotics;Notes Elite / Chaos;Head Noah (PC)
@@ -64,7 +65,7 @@ Work delivered (representative):
 
 **Media**
 ![Brandish 2 on PC-98 CRT](assets/brandish2_pc98.png)  
-*In-game English text on original-style output (CRT capture).*
+*In-game English text working on original hardware (CRT capture).*
 
 ---
 
@@ -80,15 +81,7 @@ Implemented / explored (high-level):
 - **Forward rendering path** for comparisons and cases that don’t fit deferred cleanly
 - **GPU-driven terrain tooling** (interactive authoring/painting workflows and GPU-side data flow)
 
-**Video (latest — uses plagueng rendering)**
 
-<iframe width="100%" height="420"
-  src="https://www.youtube.com/embed/zULIUYoSZRU"
-  title="plagueng rendering demo"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen>
-</iframe>
 
 **Rendering screenshot**
 
