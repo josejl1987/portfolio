@@ -1,108 +1,168 @@
 ---
-layout: default
-title: JoseJL — Portfolio
+title: JoseJL
 ---
 
-# JoseJL — Game Development Engineering Portfolio
+<div class="hero">
+  <div class="hero__title">JoseJL</div>
+  <div class="hero__subtitle">Game development engineering: rendering, systems programming, reverse engineering, and tooling.</div>
+  <div class="hero__links">
+    <a class="pill" href="https://github.com/josejl1987">GitHub</a>
+    <a class="pill" href="https://github.com/josejl1987/plagueng">plagueng</a>
+    <a class="pill" href="#media">Media</a>
+  </div>
+</div>
 
-Work includes **rendering**, **systems programming**, **reverse engineering**, and **tooling**.  
-A large portion of shipped output has been in projects where changes must be delivered as **runtime patches** (no source access, strict compatibility requirements) and validated against long play sessions.
+<nav class="toc">
+  <a href="#geofront">Geofront</a>
+  <a href="#coz">Committee of Zero</a>
+  <a href="#brandish2">Brandish 2 (PC-98)</a>
+  <a href="#plagueng">plagueng</a>
+  <a href="#focus">Technical focus</a>
+</nav>
 
-Links:
-- GitHub: https://github.com/josejl1987
-- plagueng: https://github.com/josejl1987/plagueng
+<section class="project" id="geofront">
+  <div class="project__top">
+    <h2 class="project__title">Geofront — Trails from Zero / Trails to Azure (PC)</h2>
+    <div class="project__meta">Role: lead programmer (features, fixes, integration)</div>
+  </div>
 
----
+  <div class="project__grid">
+    <div>
+      <ul class="bullets">
+        <li><b>UI / input systems:</b> controller remapping flows; integration of new actions into existing input + UI paths.</li>
+        <li><b>Backlog / message log:</b> dialogue history capture and navigation UI integrated with message flow.</li>
+        <li><b>Menu and UX work:</b> options/save-related improvements to reduce friction in common workflows.</li>
+        <li><b>Frame pacing / high-FPS work:</b> validating timing-sensitive behavior beyond a 30 FPS baseline.</li>
+        <li><b>Stability/performance fixes:</b> targeted fixes where long sessions expose resource lifetime issues.</li>
+      </ul>
+    </div>
 
-## Geofront — Trails from Zero / Trails to Azure (PC)
+    <div class="media">
+      <figure>
+        <img src="assets/geofront_options_controller.png" alt="Options / controller mapping UI" loading="lazy">
+        <figcaption>Options + controller mapping UI, including actions such as Message Log and rebinding support.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/geofront_dialogue.png" alt="Dialogue presentation" loading="lazy">
+        <figcaption>Dialogue presentation sample under the patched build.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
-**Role:** lead programmer (features, fixes, integration)
+<section class="project" id="coz">
+  <div class="project__top">
+    <h2 class="project__title">Committee of Zero — Robotics;Notes Elite / Chaos;Head Noah (PC)</h2>
+    <div class="project__meta">Role: programmer / hacker (engine-side patching and supporting tooling)</div>
+  </div>
 
-Work delivered (representative):
-- **UI / input systems:** controller remapping flows; integration of new actions into existing input + UI paths
-- **Backlog / message log:** storing dialogue history and exposing it through a usable navigation UI
-- **Save/options-related work:** reducing friction in common player workflows (configuration, menu responsiveness)
-- **Frame pacing / high-FPS work:** addressing assumptions tied to a 30 FPS baseline and validating behavior at higher refresh rates
-- **Stability/performance fixes:** targeted fixes where long play sessions expose resource lifetime issues
+  <div class="project__grid">
+    <div>
+      <ul class="bullets">
+        <li><b>Runtime patching:</b> changes delivered without engine source access, with compatibility constraints.</li>
+        <li><b>Text/UI behavior fixes:</b> presentation and interaction edge cases; regression handling.</li>
+        <li><b>Compatibility:</b> practical fixes across common PC configurations and locales.</li>
+        <li><b>Iteration discipline:</b> release workflows built around reproducibility and testing.</li>
+      </ul>
+    </div>
 
-**Media**
-![Controller remapping / options UI](assets/geofront_options_controller.png)  
-*In-game options / controller mapping UI with added actions (e.g., Message Log) and rebinding support.*
+    <div class="media">
+      <figure>
+        <img src="assets/coz_rne_before_after.png" alt="Robotics;Notes Elite before/after" loading="lazy">
+        <figcaption>Example “before/after” text improvements (Robotics;Notes Elite).</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/coz_text_before_after.png" alt="Text revision before/after" loading="lazy">
+        <figcaption>Example of targeted line revision and terminology cleanup.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
-![Dialogue presentation](assets/geofront_dialogue.png)  
-*Dialogue UI sample (layout and text flow under the patched build).*
+<section class="project" id="brandish2">
+  <div class="project__top">
+    <h2 class="project__title">Brandish 2 (PC-98) — Fan Translation Engineering</h2>
+    <div class="project__meta">Role: programmer (reverse engineering + translation pipeline support)</div>
+  </div>
 
----
+  <div class="project__grid">
+    <div>
+      <ul class="bullets">
+        <li><b>Format/layout constraints:</b> text boxes, font constraints, pointer safety, and legacy asset behavior.</li>
+        <li><b>Tooling:</b> workflows to extract/insert/verify content changes.</li>
+        <li><b>Patch safety:</b> conservative changes to avoid late-game regressions under tight constraints.</li>
+      </ul>
+    </div>
 
-## Committee of Zero — Robotics;Notes Elite / Chaos;Head Noah (PC)
+    <div class="media">
+      <figure>
+        <img src="assets/brandish2_pc98.png" alt="Brandish 2 on PC-98 CRT" loading="lazy">
+        <figcaption>In-game English text on original-style output (CRT capture).</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
-**Role:** programmer / hacker (engine-side patching and supporting tooling)
+<section class="project" id="plagueng">
+  <div class="project__top">
+    <h2 class="project__title">plagueng — Legacy D3D9 Engine Modernization / Rendering R&amp;D (C++)</h2>
+    <div class="project__meta">Repository: <a href="https://github.com/josejl1987/plagueng">github.com/josejl1987/plagueng</a></div>
+  </div>
 
-Work delivered (representative):
-- **Runtime patching** to support large script and asset changes safely
-- **Text/UI behavior fixes** (presentation, interaction edge cases, regression handling)
-- **Compatibility work** across common PC configurations
-- **Iteration discipline:** build/packaging/repro workflows to keep testing and releases manageable
+  <div class="project__grid">
+    <div>
+      <p class="muted">
+        Modernization work evolving a legacy D3D9-era architecture into a codebase suitable for experimenting with modern rendering and tools.
+      </p>
 
-**Media**
-![Robotics;Notes Elite — before/after example](assets/coz_rne_before_after.png)  
-*Example of “before/after” text improvements in Robotics;Notes Elite.*
+      <ul class="bullets">
+        <li><b>PBR pipeline:</b> material parameters + lighting model integration.</li>
+        <li><b>Deferred + clustered lighting:</b> frustum/cluster partitioning and light evaluation designed to scale dynamic lights.</li>
+        <li><b>Forward path:</b> complementary renderer for comparisons and cases that don’t fit deferred cleanly.</li>
+        <li><b>GPU-driven terrain tooling:</b> interactive authoring/painting workflows and GPU-side data flow.</li>
+      </ul>
 
-![Text revision — before/after example](assets/coz_text_before_after.png)  
-*Example of targeted line revisions and terminology cleanup.*
+      <div class="callout" id="media">
+        <div class="callout__title">Latest video (uses plagueng rendering)</div>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/zULIUYoSZRU"
+            title="plagueng rendering demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
 
----
+    <div class="media">
+      <figure>
+        <img src="https://docs.khosmium.com/~gitbook/image?url=https%3A%2F%2F4192102853-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FXgWn8Pw4fHYy81wa6DEA%252Fuploads%252FKrbLUNn9r5RZRAM7mzCz%252F4b700c793de829d18064304de4cd491d_original.webp%3Falt%3Dmedia%26token%3Db1391134-b7e9-456b-9584-67cd7a7eb375&width=1200&dpr=1&quality=100&sign=b6cf5187&sv=2"
+             alt="Rendering screenshot (latest video uses plagueng)" loading="lazy">
+        <figcaption>Rendering capture from the latest build/video.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
-## Brandish 2 (PC-98) — Fan Translation Engineering
+<section class="project" id="focus">
+  <div class="project__top">
+    <h2 class="project__title">Technical focus</h2>
+  </div>
 
-**Role:** programmer (reverse engineering + translation pipeline support)
-
-Work delivered (representative):
-- Handling **format/layout constraints** typical of PC-98-era titles (text boxes, font constraints, pointer safety)
-- Tooling/workflows to **extract/insert/verify** content changes
-- Conservative patching to avoid late-game regressions under tight constraints
-
-**Media**
-![Brandish 2 on PC-98 CRT](assets/brandish2_pc98.png)  
-*In-game English text on original-style output (CRT capture).*
-
----
-
-## plagueng — Legacy D3D9 Engine Modernization / Rendering R&D (C++)
-
-Repository: https://github.com/josejl1987/plagueng
-
-Goal: modernize a legacy D3D9-era engine architecture into a codebase suitable for experimenting with modern rendering and tools.
-
-Implemented / explored (high-level):
-- **PBR pipeline** (material parameters + lighting model integration)
-- **Deferred + clustered lighting path** (scaling dynamic lights; reducing per-light CPU overhead)
-- **Forward rendering path** for comparisons and cases that don’t fit deferred cleanly
-- **GPU-driven terrain tooling** (interactive authoring/painting workflows and GPU-side data flow)
-
-**Video (latest — uses plagueng rendering)**
-
-<iframe width="100%" height="420"
-  src="https://www.youtube.com/embed/zULIUYoSZRU"
-  title="plagueng rendering demo"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen>
-</iframe>
-
-**Rendering screenshot**
-
-<img src="https://docs.khosmium.com/~gitbook/image?url=https%3A%2F%2F4192102853-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FXgWn8Pw4fHYy81wa6DEA%252Fuploads%252FKrbLUNn9r5RZRAM7mzCz%252F4b700c793de829d18064304de4cd491d_original.webp%3Falt%3Dmedia%26token%3Db1391134-b7e9-456b-9584-67cd7a7eb375&width=1200&dpr=1&quality=100&sign=b6cf5187&sv=2" />
-
----
-
-## Technical focus (summary)
-- Rendering: PBR, forward/deferred variants, clustered lighting, GPU-driven tools
-- Systems: frame pacing, UI/input integration, stability work, resource lifetime issues
-- Reverse engineering: working without source, patch safety, regression avoidance
-- Tooling: iteration pipelines, validation, automation for content-heavy projects
-
----
-
-## Notes
-This page avoids distributing copyrighted game data. Screenshots and clips are shown for demonstration.
+  <div class="project__grid">
+    <div>
+      <ul class="bullets">
+        <li><b>Rendering:</b> PBR, forward/deferred variants, clustered lighting, GPU-driven tools.</li>
+        <li><b>Systems:</b> frame pacing, UI/input integration, stability work, resource lifetime issues.</li>
+        <li><b>Reverse engineering:</b> working without source access, patch safety, regression avoidance.</li>
+        <li><b>Tooling:</b> iteration pipelines, validation, automation for content-heavy projects.</li>
+      </ul>
+    </div>
+    <div class="media">
+      <div class="note">
+        <b>Note.</b> This page avoids distributing copyrighted game data. Screenshots and clips are shown for demonstration.
+      </div>
+    </div>
+  </div>
+</section>
