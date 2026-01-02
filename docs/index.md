@@ -22,6 +22,7 @@ title: JoseJL
 <nav class="toc">
   <a href="#plagueng">plagueng (bgfx)</a>
   <a href="#pnkr">pnkr (Vulkan)</a>
+  <a href="#glider">Glider, the Folding Hero (UE4)</a>
   <a href="#career">Healthcare Systems (8 Years)</a>
   <a href="#geofront">Trails from Zero (Official)</a>
   <a href="#brandish2">Brandish 2</a>
@@ -74,6 +75,40 @@ title: JoseJL
         <li><b>Modern C++:</b> Utilizing C++20 features for engine architecture.</li>
         <li><b>Architecture:</b> Designed for high-performance, low-overhead draw dispatch.</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="glider">
+  <div class="project__top">
+    <h2 class="project__title">Glider, the Folding Hero — Master's Thesis Project</h2>
+    <div class="project__meta">Role: Programming &amp; Design | Unreal Engine 4</div>
+  </div>
+
+  <div class="project__grid">
+    <div>
+      <p class="muted">
+        <strong>Final Master's Project (TFM)</strong> for the Master's Degree in Video Game Development at Universidad de Málaga (2015-2016) [attached_file:1]. Collaborative game prototype developed by a three-person team ("12 brujos") [attached_file:1].
+      </p>
+      
+      <ul class="bullets">
+        <li><b>Engine:</b> Built with Unreal Engine 4, showcasing integration of gameplay systems with modern rendering features.</li>
+        <li><b>Cross-Disciplinary:</b> Collaborated with Bruno Galán Adega (Art &amp; Design) and Jose Navarrete Vicente (Programming &amp; Design) [attached_file:1].</li>
+        <li><b>Audio Integration:</b> Original soundtrack composed by Oliver Moya [attached_file:1].</li>
+        <li><b>Academic Recognition:</b> Completed as part of the official <a href="http://mastervideojuegos.uma.es/">Máster Videojuegos UMA</a> program.</li>
+      </ul>
+      
+      <div class="callout" id="media">
+        <div class="callout__title">Project Trailer</div>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/vMcymRMXPms"
+            title="Glider, the folding hero (TFM Máster Videojuegos UMA)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </section>
