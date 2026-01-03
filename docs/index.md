@@ -47,14 +47,18 @@ title: JoseJL
         <li><b>GPU-Driven Tools:</b> Interactive terrain authoring workflows with GPU-side data flow.</li>
       </ul>
     </div>
-
-    <div class="media">
-      <figure>
-        <img src="https://docs.khosmium.com/~gitbook/image?url=https%3A%2F%2F4192102853-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FXgWn8Pw4fHYy81wa6DEA%252Fuploads%252FKrbLUNn9r5RZRAM7mzCz%252F4b700c793de829d18064304de4cd491d_original.webp%3Falt%3Dmedia%26token%3Db1391134-b7e9-456b-9584-67cd7a7eb375&width=1200&dpr=1&quality=100&sign=b6cf5187&sv=2"
-             alt="plagueng rendering screenshot" loading="lazy">
-        <figcaption>Rendering capture from the plagueng engine (bgfx).</figcaption>
-      </figure>
-    </div>
+	
+      <div class="callout" id="media">
+        <div class="callout__title">Project Trailer</div>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/watch?v=NkcVND3AKks"
+            title="Khosmium alpha teaser"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
   </div>
 </section>
 
