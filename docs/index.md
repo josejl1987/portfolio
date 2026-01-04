@@ -52,7 +52,7 @@ title: JoseJL
         <div class="callout__title">Project Trailer</div>
         <div class="video">
           <iframe
-            src="https://www.youtube.com/watch?v=NkcVND3AKks"
+            src="https://www.youtube.com/embed/NkcVND3AKks"
             title="Khosmium alpha teaser"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -64,21 +64,42 @@ title: JoseJL
 
 <section class="project" id="pnkr">
   <div class="project__top">
-    <h2 class="project__title">pnkr_ng — Vulkan Rendering Engine</h2>
-    <div class="project__meta">Repository: <a href="https://github.com/josejl1987/pnkr_ng/">github.com/josejl1987/pnkr_ng/</a></div>
+    <h2 class="project__title">pnkr_ng — Vulkan Research Engine</h2>
+    <div class="project__meta">
+        <strong>Status:</strong> Work in Progress / Research Project
+        <br>
+        <strong>Tech:</strong> Vulkan, C++20, Slang, enkiTS, KTX2
+        <br>
+        Repository: <a href="https://github.com/josejl1987/pnkr_ng/">github.com/josejl1987/pnkr_ng/</a>
+    </div>
   </div>
 
   <div class="project__grid">
-    <div>
-      <p class="muted">
-        <strong>Work in Progress.</strong> A ground-up rendering engine focused on explicit graphics API management using <strong>Vulkan</strong>.
+    <div class="project__description">
+      <p>
+        A custom rendering framework developed to research explicit graphics API paradigms and GPU-driven visibility. The project focuses on minimizing CPU overhead by moving draw call generation and resource binding logic directly to the GPU.
       </p>
 
-      <ul class="bullets">
-        <li><b>Vulkan Backend:</b> Explicit synchronization and resource management.</li>
-        <li><b>Modern C++:</b> Utilizing C++20 features for engine architecture.</li>
-        <li><b>Architecture:</b> Designed for high-performance, low-overhead draw dispatch.</li>
-      </ul>
+      <div class="project__sub-grid">
+        <div>
+          <h3>Core Architecture</h3>
+          <ul class="bullets">
+            <li><strong>GPU-Driven Pipeline:</strong> Implements compute-based frustum culling and DrawIndexedIndirectCount to consolidate scene rendering into a few multi-draw calls.</li>
+            <li><strong>Pass-Based FrameGraph:</strong> Uses a directed acyclic graph to manage transient resources, automatically generating Vulkan memory barriers and layout transitions based on pass dependencies.</li>
+            <li><strong>Bindless Resource Heaps:</strong> Utilizes descriptor indexing to provide shaders with global access to textures and buffers, removing the need for traditional per-object descriptor set rebinding.</li>
+            <li><strong>Task-Based Execution:</strong> Integrated enkiTS for multi-threaded command buffer recording and asset processing.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Systems & Tooling</h3>
+          <ul class="bullets">
+            <li><strong>Progressive Texture Streaming:</strong> Background loading of KTX2/Basis textures with an incremental mip-exposure system and min_lod clamping to maintain visual consistency during uploads.</li>
+            <li><strong>Memory Management:</strong> Specialized linear allocators for per-frame transient data and VMA integration for long-term GPU resource allocations.</li>
+            <li><strong>Diagnostics:</strong> Custom GPU timeline profiler, real-time BDA (Buffer Device Address) auditing to track memory faults, and runtime log-level filtering.</li>
+            <li><strong>Modular Shaders:</strong> Built with Slang to facilitate shared structures between C++ and shader code with support for modular PBR materials.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
