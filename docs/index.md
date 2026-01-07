@@ -101,6 +101,12 @@ title: JoseJL
         </div>
       </div>
     </div>
+    <div class="media">
+      <figure>
+        <img src="assets/pnkr.png" alt="pnkr GPU profiler and bistro scene" loading="lazy">
+        <figcaption>GPU timeline profiler in pnkr_ng with a Bistro scene capture.</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
