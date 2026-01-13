@@ -246,7 +246,7 @@ title: JoseJL
       <ul class="bullets">
         <li><b>Text Engine Rewrite:</b> Complete renderer overhaul with typography support (italics, distinct fonts, word-wrapping)</li>
         <li><b>Censorship Restoration:</b> Restored 500+ censored lines and scenes through pointer re-linking and asset validation</li>
-        <li><b>DLC Restoration:</b> Lingerie Conversion Patch DLC recovery via sprite flag system and menu logic rebuild</li>
+        <li><b>DLC Restoration:</b> DLC content recovery via sprite flag system and menu logic rebuild</li>
         <li><b>SHORTCUT Menu:</b> Completed unfinished developer code with full implementation</li>
         <li><b>Cross-Platform:</b> Works on Steam, GOG, and Nintendo Switch (via Custom Firmware)</li>
         <li><b>Runtime Patching:</b> Changes delivered via DLL injection without engine source access</li>
