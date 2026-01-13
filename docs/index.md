@@ -9,8 +9,8 @@ title: JoseJL
     <a href="mailto:josejl1987@gmail.com">josejl1987@gmail.com</a>
   </div>
   <div class="hero__subtitle">
-    Game Engineering &amp; Systems Architect.<br>
-    8+ years professional experience (Healthcare/Cloud) specializing in Rendering, Reverse Engineering, and Tooling.
+    Game engineer and systems programmer.<br>
+    8+ years building healthcare and cloud software, with a focus on rendering, reverse engineering, and tools.
   </div>
   <div class="hero__links">
     <a class="pill" href="https://github.com/josejl1987">GitHub</a>
@@ -40,14 +40,14 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <p class="muted">
-        <strong>Contracted engineering work</strong> to evolve a legacy D3D9-era architecture. The goal was to decouple the game logic from the graphics API and introduce modern rendering features via the <strong>bgfx</strong> abstraction layer.
+        <strong>Contract work</strong> updating a D3D9-era engine. I separated game logic from rendering and added modern features using the <strong>bgfx</strong> layer.
       </p>
 
       <ul class="bullets">
-        <li><b>bgfx Integration:</b> Replaced the fixed-function D3D9 pipeline with a flexible rendering backend.</li>
-        <li><b>PBR Pipeline:</b> Implemented physically based rendering materials and lighting models into the legacy engine.</li>
-        <li><b>Clustered Lighting:</b> Frustum/cluster partitioning shaders designed to scale dynamic lights.</li>
-        <li><b>GPU-Driven Tools:</b> Interactive terrain authoring workflows with GPU-side data flow.</li>
+        <li><b>bgfx backend:</b> Replaced the fixed-function D3D9 pipeline with a flexible renderer.</li>
+        <li><b>PBR support:</b> Added physically based materials and lighting to the legacy engine.</li>
+        <li><b>Clustered lighting:</b> Shaders that scale to many dynamic lights.</li>
+        <li><b>Terrain tools:</b> GPU-assisted terrain editing workflows.</li>
       </ul>
     </div>
 	
@@ -80,26 +80,26 @@ title: JoseJL
   <div class="project__grid">
     <div class="project__description">
       <p>
-        A custom rendering framework developed to research explicit graphics API paradigms and GPU-driven visibility. The project focuses on minimizing CPU overhead by moving draw call generation and resource binding logic directly to the GPU.
+        A custom rendering framework to study explicit graphics APIs and GPU-driven visibility. The goal is to cut CPU work by moving draw generation and resource binding to the GPU.
       </p>
 
       <div class="project__sub-grid">
         <div>
           <h3>Core Architecture</h3>
           <ul class="bullets">
-            <li><strong>GPU-Driven Pipeline:</strong> Implements compute-based frustum culling and DrawIndexedIndirectCount to consolidate scene rendering into a few multi-draw calls.</li>
-            <li><strong>Pass-Based FrameGraph:</strong> Uses a directed acyclic graph to manage transient resources, automatically generating Vulkan memory barriers and layout transitions based on pass dependencies.</li>
-            <li><strong>Bindless Resource Heaps:</strong> Utilizes descriptor indexing to provide shaders with global access to textures and buffers, removing the need for traditional per-object descriptor set rebinding.</li>
-            <li><strong>Task-Based Execution:</strong> Integrated enkiTS for multi-threaded command buffer recording and asset processing.</li>
+            <li><strong>GPU-driven pipeline:</strong> Compute frustum culling with DrawIndexedIndirectCount to batch scene rendering.</li>
+            <li><strong>Frame graph:</strong> Manages transient resources and generates Vulkan barriers and layout transitions.</li>
+            <li><strong>Bindless resources:</strong> Descriptor indexing for global shader access to textures and buffers.</li>
+            <li><strong>Task execution:</strong> enkiTS for multi-threaded command buffers and asset processing.</li>
           </ul>
         </div>
         <div>
           <h3>Systems & Tooling</h3>
           <ul class="bullets">
-            <li><strong>Progressive Texture Streaming:</strong> Background loading of KTX2/Basis textures with an incremental mip-exposure system and min_lod clamping to maintain visual consistency during uploads.</li>
-            <li><strong>Memory Management:</strong> Specialized linear allocators for per-frame transient data and VMA integration for long-term GPU resource allocations.</li>
-            <li><strong>Diagnostics:</strong> Custom GPU timeline profiler, real-time BDA (Buffer Device Address) auditing to track memory faults, and runtime log-level filtering.</li>
-            <li><strong>Modular Shaders:</strong> Built with Slang to facilitate shared structures between C++ and shader code with support for modular PBR materials.</li>
+            <li><strong>Texture streaming:</strong> Background KTX2/Basis loading with incremental mip exposure and min_lod clamping.</li>
+            <li><strong>Memory management:</strong> Linear allocators for per-frame data and VMA for long-term GPU resources.</li>
+            <li><strong>Diagnostics:</strong> GPU timeline profiler, BDA auditing for memory faults, and log-level filtering.</li>
+            <li><strong>Shader modules:</strong> Slang-based shared structures between C++ and shaders with PBR materials.</li>
           </ul>
         </div>
       </div>
@@ -122,12 +122,12 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <p class="muted">
-        <strong>Final Master's Project (TFM)</strong> for the Master's Degree in Video Game Development at Universidad de Málaga (2015-2016) [attached_file:1]. Collaborative game prototype developed by a three-person team ("12 brujos") [attached_file:1].
+        <strong>Final Master's Project (TFM)</strong> for the Master's Degree in Video Game Development at Universidad de Málaga (2015-2016) [attached_file:1]. A three-person team ("12 brujos") built the prototype [attached_file:1].
       </p>
       
       <ul class="bullets">
-        <li><b>Engine:</b> Built with Unreal Engine 4, showcasing integration of gameplay systems with modern rendering features.</li>
-        <li><b>Cross-Disciplinary:</b> Collaborated with Bruno Galán Adega (Art &amp; Design) and Jose Navarrete Vicente (Programming &amp; Design) [attached_file:1].</li>
+        <li><b>Engine:</b> Built with Unreal Engine 4, combining gameplay systems and rendering features.</li>
+        <li><b>Team:</b> Collaborated with Bruno Galán Adega (Art &amp; Design) and Jose Navarrete Vicente (Programming &amp; Design) [attached_file:1].</li>
         <li><b>Audio Integration:</b> Original soundtrack composed by Oliver Moya [attached_file:1].</li>
         <li><b>Academic Recognition:</b> Completed as part of the official <a href="http://mastervideojuegos.uma.es/">Máster Videojuegos UMA</a> program.</li>
       </ul>
@@ -156,13 +156,13 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <p class="muted">
-        Extensive professional background developing complex, high-reliability systems for the healthcare industry.
+        Eight years building reliable software for healthcare systems.
       </p>
 
       <ul class="bullets">
-        <li><b>Cloud-Based Imaging:</b> Developed cloud-native medical image visualization solutions (C# / React), optimizing for performance and low latency.</li>
-        <li><b>Complex Scheduling:</b> Architected and maintained large-scale scheduling systems for clinical environments.</li>
-        <li><b>Full Stack Architecture:</b> Managed the full lifecycle of feature development from backend logic (C#) to frontend implementation (React).</li>
+        <li><b>Medical imaging:</b> Built cloud-based image viewers (C# / React) with low latency.</li>
+        <li><b>Scheduling:</b> Designed and maintained large scheduling systems for clinics.</li>
+        <li><b>Full stack:</b> Owned features from backend (C#) through frontend (React).</li>
       </ul>
     </div>
   </div>
@@ -177,36 +177,36 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <p class="muted">
-        Fan localization engineering project that served as the technical foundation for the <strong>official English releases by NIS America</strong>.
+        Fan localization engineering work that later became the base for the <strong>official English releases by NIS America</strong>.
       </p>
 
       <h3>Trails from Zero / Trails to Azure</h3>
       <ul class="bullets">
-        <li><b>Official Adoption:</b> Acquired and used as base for commercial PC/Switch releases</li>
-        <li><b>Framerate Unlock:</b> Engine decoupling from fixed 30 fps, validated up to 144 fps</li>
-        <li><b>4K Support:</b> Arbitrary resolution support with proper UI scaling matrices</li>
-        <li><b>Text Engine:</b> Variable-width font system, expansion of fixed-width buffers</li>
-        <li><b>HD Assets:</b> Memory-managed injection preventing OOM errors</li>
-        <li><b>UI/Input:</b> Complete controller remapping, custom launcher integration</li>
-        <li><b>Azure Specifics:</b> Pom Pom Party minigame localization, save transfer logic</li>
-        <li><b>Stability:</b> Resource lifetime fixes, frame pacing improvements</li>
+        <li><b>Official adoption:</b> Used as the base for commercial PC/Switch releases</li>
+        <li><b>Framerate unlock:</b> Removed 30 fps lock and validated up to 144 fps</li>
+        <li><b>4K support:</b> Arbitrary resolution support with UI scaling</li>
+        <li><b>Text engine:</b> Variable-width fonts and expanded buffers</li>
+        <li><b>HD assets:</b> Memory-managed injection to avoid OOM errors</li>
+        <li><b>UI/input:</b> Full controller remapping and custom launcher</li>
+        <li><b>Azure extras:</b> Pom Pom Party localization and save transfer logic</li>
+        <li><b>Stability:</b> Resource lifetime fixes and better frame pacing</li>
       </ul>
 
       <h3>Dinosaur Resurrection</h3>
       <ul class="bullets">
-        <li><b>DX8 Framerate Unlock:</b> Lifted 30 fps cap to 120 fps through timing analysis</li>
-        <li><b>Engine Decoupling:</b> Separated game logic from fixed timestep validation</li>
-        <li><b>Physics/Animation:</b> Validated systems stability at higher refresh rates</li>
-        <li><b>Input Scaling:</b> Ensured responsiveness scales correctly with framerate</li>
-        <li><b>Modern Compatibility:</b> DX8 driver considerations for current GPU stacks</li>
+        <li><b>DX8 framerate unlock:</b> Lifted 30 fps cap to 120 fps through timing analysis</li>
+        <li><b>Engine decoupling:</b> Separated game logic from fixed timestep validation</li>
+        <li><b>Physics/animation:</b> Validated stability at higher refresh rates</li>
+        <li><b>Input scaling:</b> Kept responsiveness consistent with framerate</li>
+        <li><b>Modern compatibility:</b> DX8 driver considerations for current GPUs</li>
       </ul>
 
       <h3>The Legend of Heroes III: White Witch</h3>
       <ul class="bullets">
-        <li><b>SDL3 Mapper:</b> DirectDraw and DirectInput to SDL3 compatibility layer</li>
-        <li><b>Text System:</b> Variable-width fonts, English script expansion</li>
-        <li><b>Modern Systems:</b> Windows 10/11 compatibility, stability fixes</li>
-        <li><b>Tooling:</b> Script extraction/reinsertion pipelines</li>
+        <li><b>SDL3 mapper:</b> DirectDraw and DirectInput to SDL3 compatibility layer</li>
+        <li><b>Text system:</b> Variable-width fonts and English script expansion</li>
+        <li><b>Modern systems:</b> Windows 10/11 compatibility and stability fixes</li>
+        <li><b>Tooling:</b> Script extraction and reinsertion pipelines</li>
       </ul>
       
       <div class="callout" id="media">
@@ -244,13 +244,13 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <ul class="bullets">
-        <li><b>Text Engine Rewrite:</b> Complete renderer overhaul with typography support (italics, distinct fonts, word-wrapping)</li>
-        <li><b>Censorship Restoration:</b> Restored 500+ censored lines and scenes through pointer re-linking and asset validation</li>
-        <li><b>DLC Restoration:</b> DLC content recovery via sprite flag system and menu logic rebuild</li>
-        <li><b>SHORTCUT Menu:</b> Completed unfinished developer code with full implementation</li>
-        <li><b>Cross-Platform:</b> Works on Steam, GOG, and Nintendo Switch (via Custom Firmware)</li>
-        <li><b>Runtime Patching:</b> Changes delivered via DLL injection without engine source access</li>
-        <li><b>Compatibility:</b> Practical fixes across common PC configurations and locales</li>
+        <li><b>Text renderer:</b> Rebuilt typography support (italics, distinct fonts, word wrap)</li>
+        <li><b>Censorship restoration:</b> Restored 500+ lines and scenes by re-linking pointers and validating assets</li>
+        <li><b>DLC restoration:</b> Recovered DLC content via sprite flags and menu logic rebuild</li>
+        <li><b>SHORTCUT menu:</b> Finished the unfinished developer menu</li>
+        <li><b>Cross-platform:</b> Works on Steam, GOG, and Nintendo Switch (via custom firmware)</li>
+        <li><b>Runtime patching:</b> Delivered changes via DLL injection without engine source access</li>
+        <li><b>Compatibility:</b> Fixes across common PC configurations and locales</li>
       </ul>
     </div>
 
@@ -272,11 +272,11 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <ul class="bullets">
-        <li><b>Full Disassembly:</b> Complete reverse engineering of entire PC-98 binary</li>
-        <li><b>Custom OMF Linker:</b> Implemented Object Module Format linker to reconstruct build chain</li>
-        <li><b>Translation Pipeline:</b> Memory constraint solutions and workflows for PC-98 architecture</li>
-        <li><b>x86 Segmented Mode:</b> Reverse engineered DOS game running in 16-bit real/segmented mode</li>
-        <li><b>Tooling:</b> Wrote workflows to extract/insert/verify content changes in legacy binary formats</li>
+        <li><b>Full disassembly:</b> Reverse engineered the entire PC-98 binary</li>
+        <li><b>Custom OMF linker:</b> Built an Object Module Format linker to rebuild the chain</li>
+        <li><b>Translation pipeline:</b> Memory constraint solutions for PC-98 text workflows</li>
+        <li><b>x86 segmented mode:</b> Reverse engineered a 16-bit real/segmented DOS build</li>
+        <li><b>Tooling:</b> Extract/insert/verify workflows for legacy binary formats</li>
       </ul>
     </div>
 
@@ -298,17 +298,16 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <p class="muted">
-        Production-level DirectX 11 graphics enhancement mod with real-time parameter adjustment via ImGui control panel.
+        DirectX 11 graphics mod with real-time controls via an ImGui panel.
       </p>
 
       <ul class="bullets">
-        <li><b>Render Loop Hooking:</b> Intercepted renderLoop, CTexMgr::CreateTexture, C3DCommand queue</li>
-        <li><b>Shadow Control Panel:</b> Custom resolution (512×512 to 16384×16384), 4-level cascade shadows, PCSS light size</li>
-        <li><b>Shader Replacement:</b> Real-time custom/original shader switching, debugging overlays</li>
-        <li><b>Advanced Graphics:</b> Render target management (geometry, normals, glare), custom cascade bounds, camera debugging</li>
-        <li><b>SMAA Integration:</b> Subpixel Morphological AA with presets (Low-Ultra), temporal reprojection (T2x), MSAA detection</li>
-        <li><b>Multi-Pass Interception:</b> SSAO, volume lighting, glare/DOF, blur effects, overlay rendering</li>
-        <li><b>Thread Safety:</b> Critical section synchronization for real-time parameter modification</li>
+        <li><b>Shadow controls:</b> Custom resolution (512×512 to 16384×16384), 4-level cascades, PCSS light size</li>
+        <li><b>Shader replacement:</b> Switch custom/original shaders in real time with debug overlays</li>
+        <li><b>Graphics pipeline:</b> Render target management, custom cascade bounds, camera debugging</li>
+        <li><b>SMAA:</b> Presets (Low-Ultra), temporal reprojection (T2x), MSAA detection</li>
+        <li><b>Multi-pass hooks:</b> SSAO, volume lighting, glare/DOF, blur, overlay rendering</li>
+        <li><b>Thread safety:</b> Critical section sync for live parameter changes</li>
       </ul>
       
       <div class="callout" id="media">
@@ -327,9 +326,9 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <ul class="bullets">
-        <li><b>Rendering:</b> Vulkan, bgfx, D3D9/11, PBR, GPU-driven pipelines.</li>
-        <li><b>Systems:</b> Frame pacing, Input abstraction, Memory management, Resource lifetime.</li>
-        <li><b>Reverse Engineering:</b> Working without source, Ghidra and IDA analysis, binary patching, x86 segmentation/legacy constraints.</li>
+        <li><b>Rendering:</b> Vulkan, bgfx, D3D9/11, PBR, GPU-driven rendering.</li>
+        <li><b>Systems:</b> Frame pacing, input abstraction, memory management, resource lifetime.</li>
+        <li><b>Reverse engineering:</b> Working without source, Ghidra/IDA, binary patching, x86 segmentation.</li>
         <li><b>Tooling:</b> Automation for content-heavy projects, asset extraction/insertion pipelines.</li>
       </ul>
     </div>
