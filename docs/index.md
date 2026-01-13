@@ -122,13 +122,13 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <p class="muted">
-        <strong>Final Master's Project (TFM)</strong> for the Master's Degree in Video Game Development at Universidad de Málaga (2015-2016) [attached_file:1]. A three-person team ("12 brujos") built the prototype [attached_file:1].
+        <strong>Final Master's Project (TFM)</strong> for the Master's Degree in Video Game Development at Universidad de Málaga (2015-2016). A three-person team ("12 brujos") built the prototype.
       </p>
       
       <ul class="bullets">
         <li><b>Engine:</b> Built with Unreal Engine 4, combining gameplay systems and rendering features.</li>
-        <li><b>Team:</b> Collaborated with Bruno Galán Adega (Art &amp; Design) and Jose Navarrete Vicente (Programming &amp; Design) [attached_file:1].</li>
-        <li><b>Audio Integration:</b> Original soundtrack composed by Oliver Moya [attached_file:1].</li>
+        <li><b>Team:</b> Collaborated with Bruno Galán Adega (Art &amp; Design) and Jose Navarrete Vicente (Programming &amp; Design).</li>
+        <li><b>Audio Integration:</b> Original soundtrack composed by Oliver Moya.</li>
         <li><b>Academic Recognition:</b> Completed as part of the official <a href="http://mastervideojuegos.uma.es/">Máster Videojuegos UMA</a> program.</li>
       </ul>
       
