@@ -15,6 +15,7 @@ title: JoseJL
   <div class="hero__links">
     <a class="pill" href="https://github.com/josejl1987">GitHub</a>
     <a class="pill" href="#career">Professional Exp.</a>
+    <a class="pill" href="#plagueng">plagueng (Contract)</a>
     <a class="pill" href="#geofront">Geofront (Official)</a>
   </div>
 </div>
