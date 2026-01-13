@@ -15,7 +15,7 @@ title: JoseJL
   <div class="hero__links">
     <a class="pill" href="https://github.com/josejl1987">GitHub</a>
     <a class="pill" href="#career">Professional Exp.</a>
-    <a class="pill" href="#plagueng">plagueng (Contract)</a>
+    <a class="pill" href="#geofront">Geofront (Official)</a>
   </div>
 </div>
 
@@ -24,8 +24,10 @@ title: JoseJL
   <a href="#pnkr">pnkr (Vulkan)</a>
   <a href="#glider">Glider, the Folding Hero (UE4)</a>
   <a href="#career">Healthcare Systems (8 Years)</a>
-  <a href="#geofront">Trails from Zero (Official)</a>
+  <a href="#geofront">Geofront — Crossbell Arc</a>
+  <a href="#coz">Chaos;Head Noah</a>
   <a href="#brandish2">Brandish 2</a>
+  <a href="#ys8">Ys VIII Graphics Mod</a>
 </nav>
 
 <section class="project" id="plagueng">
@@ -167,7 +169,7 @@ title: JoseJL
 
 <section class="project" id="geofront">
   <div class="project__top">
-    <h2 class="project__title">Geofront — Trails from Zero / Trails to Azure</h2>
+    <h2 class="project__title">Geofront — The Crossbell Arc</h2>
     <div class="project__meta">Role: Lead Programmer (Reverse Engineering &amp; Systems)</div>
   </div>
 
@@ -176,12 +178,34 @@ title: JoseJL
       <p class="muted">
         Fan localization engineering project that served as the technical foundation for the <strong>official English releases by NIS America</strong>.
       </p>
-      
+
+      <h3>Trails from Zero / Trails to Azure</h3>
       <ul class="bullets">
-        <li><b>Official Adoption:</b> This work was acquired and used as the base for the commercial release on PC and Switch.</li>
-        <li><b>UI / Input Systems:</b> Complete controller remapping flows; integration of new actions into existing input + UI paths.</li>
-        <li><b>Frame Pacing:</b> Decoupled game logic from rendering to validate timing-sensitive behavior beyond the original 30 FPS cap.</li>
-        <li><b>Stability:</b> Targeted fixes for resource lifetime issues exposed by long play sessions.</li>
+        <li><b>Official Adoption:</b> Acquired and used as base for commercial PC/Switch releases</li>
+        <li><b>Framerate Unlock:</b> Engine decoupling from fixed 30 fps, validated up to 144 fps</li>
+        <li><b>4K Support:</b> Arbitrary resolution support with proper UI scaling matrices</li>
+        <li><b>Text Engine:</b> Variable-width font system, expansion of fixed-width buffers</li>
+        <li><b>HD Assets:</b> Memory-managed injection preventing OOM errors</li>
+        <li><b>UI/Input:</b> Complete controller remapping, custom launcher integration</li>
+        <li><b>Azure Specifics:</b> Pom Pom Party minigame localization, save transfer logic</li>
+        <li><b>Stability:</b> Resource lifetime fixes, frame pacing improvements</li>
+      </ul>
+
+      <h3>Dinosaur Resurrection</h3>
+      <ul class="bullets">
+        <li><b>DX8 Framerate Unlock:</b> Lifted 30 fps cap to 120 fps through timing analysis</li>
+        <li><b>Engine Decoupling:</b> Separated game logic from fixed timestep validation</li>
+        <li><b>Physics/Animation:</b> Validated systems stability at higher refresh rates</li>
+        <li><b>Input Scaling:</b> Ensured responsiveness scales correctly with framerate</li>
+        <li><b>Modern Compatibility:</b> DX8 driver considerations for current GPU stacks</li>
+      </ul>
+
+      <h3>The Legend of Heroes III: White Witch</h3>
+      <ul class="bullets">
+        <li><b>SDL3 Mapper:</b> DirectDraw and DirectInput to SDL3 compatibility layer</li>
+        <li><b>Text System:</b> Variable-width fonts, English script expansion</li>
+        <li><b>Modern Systems:</b> Windows 10/11 compatibility, stability fixes</li>
+        <li><b>Tooling:</b> Script extraction/reinsertion pipelines</li>
       </ul>
       
       <div class="callout" id="media">
@@ -219,16 +243,20 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <ul class="bullets">
-        <li><b>Runtime Patching:</b> Changes delivered via DLL injection without engine source access.</li>
-        <li><b>Text/UI Fixes:</b> Solved presentation and interaction edge cases; regression handling.</li>
-        <li><b>Compatibility:</b> Practical fixes across common PC configurations and locales.</li>
+        <li><b>Text Engine Rewrite:</b> Complete renderer overhaul with typography support (italics, distinct fonts, word-wrapping)</li>
+        <li><b>Censorship Restoration:</b> Restored 500+ censored lines and scenes through pointer re-linking and asset validation</li>
+        <li><b>DLC Restoration:</b> Lingerie Conversion Patch DLC recovery via sprite flag system and menu logic rebuild</li>
+        <li><b>SHORTCUT Menu:</b> Completed unfinished developer code with full implementation</li>
+        <li><b>Cross-Platform:</b> Works on Steam, GOG, and Nintendo Switch (via Custom Firmware)</li>
+        <li><b>Runtime Patching:</b> Changes delivered via DLL injection without engine source access</li>
+        <li><b>Compatibility:</b> Practical fixes across common PC configurations and locales</li>
       </ul>
     </div>
 
     <div class="media">
       <figure>
         <img src="assets/coz_rne_before_after.png" alt="Robotics;Notes Elite before/after" loading="lazy">
-        <figcaption>Example “before/after” text improvements (Robotics;Notes Elite).</figcaption>
+        <figcaption>Example "before/after" text improvements (Robotics;Notes Elite).</figcaption>
       </figure>
     </div>
   </div>
@@ -243,9 +271,11 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <ul class="bullets">
-        <li><b>x86 Segmented Mode:</b> Reverse engineered a DOS game running in 16-bit real/segmented mode.</li>
-        <li><b>Memory Constraints:</b> Solved extremely tight memory limits inherent to the architecture when injecting variable-width English text.</li>
-        <li><b>Tooling:</b> Wrote workflows to extract/insert/verify content changes in legacy binary formats.</li>
+        <li><b>Full Disassembly:</b> Complete reverse engineering of entire PC-98 binary</li>
+        <li><b>Custom OMF Linker:</b> Implemented Object Module Format linker to reconstruct build chain</li>
+        <li><b>Translation Pipeline:</b> Memory constraint solutions and workflows for PC-98 architecture</li>
+        <li><b>x86 Segmented Mode:</b> Reverse engineered DOS game running in 16-bit real/segmented mode</li>
+        <li><b>Tooling:</b> Wrote workflows to extract/insert/verify content changes in legacy binary formats</li>
       </ul>
     </div>
 
@@ -254,6 +284,36 @@ title: JoseJL
         <img src="assets/brandish2_pc98.png" alt="Brandish 2 on PC-98 CRT" loading="lazy">
         <figcaption>In-game English text on original-style output (CRT capture).</figcaption>
       </figure>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="ys8">
+  <div class="project__top">
+    <h2 class="project__title">Ys VIII — DirectX 11 Graphics Mod</h2>
+    <div class="project__meta">Role: Reverse Engineer (Render Pipeline &amp; Shaders)</div>
+  </div>
+
+  <div class="project__grid">
+    <div>
+      <p class="muted">
+        Production-level DirectX 11 graphics enhancement mod with real-time parameter adjustment via ImGui control panel.
+      </p>
+
+      <ul class="bullets">
+        <li><b>Render Loop Hooking:</b> Intercepted renderLoop, CTexMgr::CreateTexture, C3DCommand queue</li>
+        <li><b>Shadow Control Panel:</b> Custom resolution (512×512 to 16384×16384), 4-level cascade shadows, PCSS light size</li>
+        <li><b>Shader Replacement:</b> Real-time custom/original shader switching, debugging overlays</li>
+        <li><b>Advanced Graphics:</b> Render target management (geometry, normals, glare), custom cascade bounds, camera debugging</li>
+        <li><b>SMAA Integration:</b> Subpixel Morphological AA with presets (Low-Ultra), temporal reprojection (T2x), MSAA detection</li>
+        <li><b>Multi-Pass Interception:</b> SSAO, volume lighting, glare/DOF, blur effects, overlay rendering</li>
+        <li><b>Thread Safety:</b> Critical section synchronization for real-time parameter modification</li>
+      </ul>
+      
+      <div class="callout" id="media">
+        <div class="callout__title">Repository</div>
+        <p><a href="https://github.com/josejl1987/YsVIII">github.com/josejl1987/YsVIII</a></p>
+      </div>
     </div>
   </div>
 </section>
