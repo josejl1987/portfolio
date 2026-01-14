@@ -51,7 +51,7 @@ title: JoseJL
       </ul>
     </div>
 	
-      <div class="callout" id="media">
+      <div class="callout callout--media">
         <div class="callout__title">Project Trailer</div>
         <div class="video">
           <iframe
@@ -131,7 +131,7 @@ title: JoseJL
         <li><b>Academic Recognition:</b> Completed as part of the official <a href="http://mastervideojuegos.uma.es/">Máster Videojuegos UMA</a> program.</li>
       </ul>
       
-      <div class="callout" id="media">
+      <div class="callout callout--media">
         <div class="callout__title">Project Trailer</div>
         <div class="video">
           <iframe
@@ -206,7 +206,7 @@ title: JoseJL
         <li><b>Modern systems:</b> Windows 10/11 compatibility and stability fixes.</li>
       </ul>
       
-      <div class="callout" id="media">
+      <div class="callout callout--media">
         <div class="callout__title">Feature Showcase</div>
         <div class="video">
           <iframe
@@ -303,7 +303,7 @@ title: JoseJL
         <li><b>Thread safety:</b> Critical section fixes, fixing random crashes with NVIDIA GPUs on Windows 7.</li>
       </ul>
       
-      <div class="callout" id="media">
+      <div class="callout callout--media">
         <div class="callout__title">Repository</div>
         <p><a href="https://github.com/josejl1987/YsVIII">github.com/josejl1987/YsVIII</a></p>
       </div>
@@ -335,3 +335,4 @@ title: JoseJL
 <footer class="site-footer">
   <span>Contact: <a href="mailto:josejl1987@gmail.com">josejl1987@gmail.com</a></span>
 </footer>
+
