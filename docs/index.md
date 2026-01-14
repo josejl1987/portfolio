@@ -48,6 +48,7 @@ title: JoseJL
         <li><b>PBR support:</b> Added physically based materials and lighting to the legacy engine.</li>
         <li><b>Clustered lighting:</b> Shaders that scale to many dynamic lights.</li>
         <li><b>Terrain tools:</b> GPU-assisted terrain editing workflows.</li>
+		<li><b>Unity shaders:</b> Reimplemented several Unity shader packages for usage in custom engine.</li>
       </ul>
     </div>
 	
@@ -319,7 +320,7 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <ul class="bullets">
-        <li><b>Rendering:</b> Vulkan, bgfx, D3D9/11, PBR, GPU-driven rendering.</li>
+        <li><b>Rendering:</b> Vulkan, bgfx, D3D9/11, PBR, Unity, UE4, GPU-driven rendering.</li>
         <li><b>Systems:</b> Frame pacing, input abstraction, memory management, resource lifetime.</li>
         <li><b>Reverse engineering:</b> Working without source, Ghidra/IDA, binary patching, x86 segmentation.</li>
         <li><b>Tooling:</b> Automation for content-heavy projects, asset extraction/insertion pipelines.</li>
