@@ -87,16 +87,15 @@ title: JoseJL
         <div>
           <h3>Core Architecture</h3>
           <ul class="bullets">
-            <li><strong>GPU-driven pipeline:</strong> Compute frustum culling with DrawIndexedIndirectCount to batch scene rendering.</li>
+            <li><strong>GPU-driven pipeline:</strong> Indirect drawing with frustum culling.</li>
             <li><strong>Frame graph:</strong> Manages transient resources and generates Vulkan barriers and layout transitions.</li>
             <li><strong>Bindless resources:</strong> Descriptor indexing for global shader access to textures and buffers.</li>
-            <li><strong>Task execution:</strong> enkiTS for multi-threaded command buffers and asset processing.</li>
           </ul>
         </div>
         <div>
           <h3>Systems & Tooling</h3>
           <ul class="bullets">
-            <li><strong>Texture streaming:</strong> Background KTX2/Basis loading with incremental mip exposure and min_lod clamping.</li>
+            <li><strong>Texture streaming:</strong> Background KTX2 loading with incremental mip exposure and min_lod clamping.</li>
             <li><strong>Memory management:</strong> Linear allocators for per-frame data and VMA for long-term GPU resources.</li>
             <li><strong>Diagnostics:</strong> GPU timeline profiler, BDA auditing for memory faults, and log-level filtering.</li>
             <li><strong>Shader modules:</strong> Slang-based shared structures between C++ and shaders with PBR materials.</li>
@@ -161,7 +160,7 @@ title: JoseJL
 
       <ul class="bullets">
         <li><b>Medical imaging:</b> Built cloud-based image viewers (C# / React) with low latency.</li>
-        <li><b>Scheduling:</b> Designed and maintained large scheduling systems for clinics.</li>
+        <li><b>Scheduling:</b> Designed and maintained large scheduling systems for hospitals.</li>
         <li><b>Full stack:</b> Owned features from backend (C#) through frontend (React).</li>
       </ul>
     </div>
@@ -177,36 +176,34 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <p class="muted">
-        Fan localization engineering work that later became the base for the <strong>official English releases by NIS America</strong>.
+        Fan localization engineering work that later became the base for the <strong>official English releases by NIS America.</strong>.
       </p>
 
       <h3>Trails from Zero / Trails to Azure</h3>
       <ul class="bullets">
-        <li><b>Official adoption:</b> Used as the base for commercial PC/Switch releases</li>
-        <li><b>Framerate unlock:</b> Removed 30 fps lock and validated up to 144 fps</li>
-        <li><b>4K support:</b> Arbitrary resolution support with UI scaling</li>
-        <li><b>Text engine:</b> Variable-width fonts and expanded buffers</li>
-        <li><b>HD assets:</b> Memory-managed injection to avoid OOM errors</li>
-        <li><b>UI/input:</b> Full controller remapping and custom launcher</li>
-        <li><b>Azure extras:</b> Pom Pom Party localization and save transfer logic</li>
-        <li><b>Stability:</b> Resource lifetime fixes and better frame pacing</li>
+        <li><b>Official adoption:</b> Used as the base for commercial PC/Switch releases.</li>
+        <li><b>Framerate unlock:</b> Removed 30 fps lock and validated up to 144 fps.</li>
+        <li><b>4K support:</b> Arbitrary resolution support with UI scaling.</li>
+        <li><b>Text engine:</b> Variable-width fonts</li>
+        <li><b>HD assets:</b> Custom texture loading support.</li>
+        <li><b>UI/input:</b> Full controller remapping, save menu, and dialogue backlog, and completely revamped ingame settings.</li>
+        <li><b>Stability:</b> Resource lifetime fixes and better frame pacing.</li>
       </ul>
 
       <h3>Dinosaur Resurrection</h3>
       <ul class="bullets">
-        <li><b>DX8 framerate unlock:</b> Lifted 30 fps cap to 120 fps through timing analysis</li>
-        <li><b>Engine decoupling:</b> Separated game logic from fixed timestep validation</li>
-        <li><b>Physics/animation:</b> Validated stability at higher refresh rates</li>
-        <li><b>Input scaling:</b> Kept responsiveness consistent with framerate</li>
-        <li><b>Modern compatibility:</b> DX8 driver considerations for current GPUs</li>
+        <li><b>Framerate unlock:</b> Lifted 30 fps cap to 120 fps.</li>
+        <li><b>Text tools:</b> Reverse engineered game script format for text reinsertion.</li>
+		<li><b>Text engine:</b> Variable-width fonts</li>
+        <li><b>HD support:</b> Allowed upscaling from 640x480 to custom resolution. </li>
+
       </ul>
 
       <h3>The Legend of Heroes III: White Witch</h3>
       <ul class="bullets">
-        <li><b>SDL3 mapper:</b> DirectDraw and DirectInput to SDL3 compatibility layer</li>
-        <li><b>Text system:</b> Variable-width fonts and English script expansion</li>
-        <li><b>Modern systems:</b> Windows 10/11 compatibility and stability fixes</li>
-        <li><b>Tooling:</b> Script extraction and reinsertion pipelines</li>
+        <li><b>SDL3 mapper:</b> DirectDraw and DirectInput to SDL3 compatibility layer.</li>
+        <li><b>Text system:</b> Variable-width fonts and reverse engineered game script format for text reinsertion.</li>
+        <li><b>Modern systems:</b> Windows 10/11 compatibility and stability fixes.</li>
       </ul>
       
       <div class="callout" id="media">
@@ -247,7 +244,6 @@ title: JoseJL
         <li><b>Text renderer:</b> Rebuilt typography support (italics, distinct fonts, word wrap)</li>
         <li><b>Censorship restoration:</b> Restored 500+ lines and scenes by re-linking pointers and validating assets</li>
         <li><b>DLC restoration:</b> Recovered DLC content via sprite flags and menu logic rebuild</li>
-        <li><b>SHORTCUT menu:</b> Finished the unfinished developer menu</li>
         <li><b>Cross-platform:</b> Works on Steam, GOG, and Nintendo Switch (via custom firmware)</li>
         <li><b>Runtime patching:</b> Delivered changes via DLL injection without engine source access</li>
         <li><b>Compatibility:</b> Fixes across common PC configurations and locales</li>
@@ -272,11 +268,8 @@ title: JoseJL
   <div class="project__grid">
     <div>
       <ul class="bullets">
-        <li><b>Full disassembly:</b> Reverse engineered the entire PC-98 binary</li>
-        <li><b>Custom OMF linker:</b> Built an Object Module Format linker to rebuild the chain</li>
-        <li><b>Translation pipeline:</b> Memory constraint solutions for PC-98 text workflows</li>
-        <li><b>x86 segmented mode:</b> Reverse engineered a 16-bit real/segmented DOS build</li>
-        <li><b>Tooling:</b> Extract/insert/verify workflows for legacy binary formats</li>
+        <li><b>Full disassembly:</b> Reverse engineered the entire PC-98 binary, with the extra challenge of x86 16 bit segmented mode memory constraints.</li>
+        <li><b>Custom OMF linker:</b> Built an Object Module Format linker to allow custom code modifications.</li>
       </ul>
     </div>
 
@@ -302,12 +295,12 @@ title: JoseJL
       </p>
 
       <ul class="bullets">
-        <li><b>Shadow controls:</b> Custom resolution (512×512 to 16384×16384), 4-level cascades, PCSS light size</li>
-        <li><b>Shader replacement:</b> Switch custom/original shaders in real time with debug overlays</li>
-        <li><b>Graphics pipeline:</b> Render target management, custom cascade bounds, camera debugging</li>
+        <li><b>Shadow controls:</b> Custom resolution (512×512 to 16384×16384), 4-level cascades, PCSS </li>
+        <li><b>Shader replacement:</b> Switch custom/original shaders in real time.</li>
+        <li><b>Graphics pipeline:</b> Render target management, custom cascade bounds, custom FOV.</li>
         <li><b>SMAA:</b> Presets (Low-Ultra), temporal reprojection (T2x), MSAA detection</li>
-        <li><b>Multi-pass hooks:</b> SSAO, volume lighting, glare/DOF, blur, overlay rendering</li>
-        <li><b>Thread safety:</b> Critical section sync for live parameter changes</li>
+        <li><b>Multi-pass hooks:</b> SSAO, volume lighting, glare/DOF, blur.</li>
+        <li><b>Thread safety:</b> Critical section fixes, fixing random crashes with NVIDIA GPUs on Windows 7.</li>
       </ul>
       
       <div class="callout" id="media">
